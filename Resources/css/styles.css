@@ -1,0 +1,118 @@
+
+/* ------------- Overall HTML base props --------------- */
+html{
+    background-color: azure;
+    color: gray;
+    font-family: 'Bree Serif', 'Open Sans', sans-serif;
+    font-weight: 300;
+    font-size: 20px;
+    text-rendering: optimizeLegibility;/*makes font rendering in perfect way */
+}
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* ------------- Reusable components --------------- */
+
+.row{
+    max-width: 1140px;
+    margin: 0 auto 0 auto;
+    position: absolute;
+}
+
+
+/* ------------- Button components --------------- */
+
+.btn:link,
+.btn:visited{
+    display: inline-block;
+    /* margin: 250px 200px; */
+    padding: 10px 10px;
+    font-weight: 200;
+    text-decoration: none;
+    transition: background-color 0.5s, color 0.5s;
+}
+
+.btn-full:link,
+.btn-full:visited{
+    /* background-color: #bcbfc0; */
+    border: 1px solid #636e72;
+    color: #636e72;
+    border-radius: 200px;
+}
+
+.btn-full:hover,
+.btn-full:active{
+    color: aliceblue;
+    background-color: rgb(119, 126, 126);
+    /* background-image: linear-gradient(#7dcbe7,#122e38); */
+}
+
+
+
+/* ------------- Header components --------------- */
+
+.hero-text-box{
+    position: absolute;
+    width: 100%;
+    height: 100vh;/* adjusts acc to viewport height - vh*/
+    display: flex;
+    align-items: center;
+    justify-content: left;
+    overflow: hidden;
+}
+
+.hero-text-box h3{
+    position: absolute;
+    text-align: left;
+    font-size: 2rem;
+    font-family: 'Bree Serif';
+    font-weight: 300;
+    font-variant-alternates: swash(1rem);
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    word-spacing: 2.5px;
+    top: 40%;
+    left: 15%;
+    /* padding: 5%; */
+    margin-bottom: 50%;
+    z-index: 1;/*that makes the text above the other property(img/vid)*/
+    /* opacity: 0.7%; */
+}
+
+.hero-text-box a{
+    position: absolute;
+    font-size: 1rem;
+    font-family: 'Bree Serif';
+    top: 40%;
+    left: 15%;
+    margin-top: 5%;
+    z-index: 1;/*that makes the text above the other property(img/vid)*/
+    /* opacity: 0.7%; */
+}
+
+.hero-text-box video{
+    /* range: linear-gradient(rgba(0, 0, 0, 0.253), rgba(0, 0, 0, 0.253)); */
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    opacity: 0.75;
+    z-index: -100;
+}
+
+.logo{
+    height: 75px;
+    width: auto;
+    float: left;
+}
+
+.main-nav{
+    /* position: absolute; */
+    /* margin-left: 15%; */
+    float: right;
+    
+}
